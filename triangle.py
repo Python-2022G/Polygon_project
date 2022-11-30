@@ -21,8 +21,8 @@ class Triangle:
         This method finds the type of the triangle.
         '''
         if self.is_valid():
-            if self.a==self.b and self.c!=self.a:
-                return "Teng tomonli"
+            if self.a==self.b or self.c==self.a or self.c==self.a:
+                return "Teng yonli"
             if self.a==self.b and self.c==self.a:
                 return "teng tomonli"
             return "Turli tomonli"
@@ -49,4 +49,10 @@ class Triangle:
         Returns:
             int or float: return area of the triangle if the triangle is valid, 0 otherwise
         '''
-        return 
+        x=self.a
+        y=self.b
+        z=self.c
+        if self.is_valid():
+            p=(x+y+z)/2
+            return pow(p*(p-x)*(p-y)*(p-z),1/2)
+        return False
