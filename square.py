@@ -38,5 +38,5 @@ class Square:
         Returns:
             float: return perimeter of the square if the square is valid, 0 otherwise
         """
-        return  self.is_valid  *  4
+        return  self.is_valid * 4
 
