@@ -29,7 +29,6 @@ class Triangle:
             return "Turli tomonli"
         return False
 
-        
     def perimeter(self):
         '''
         This method finds the perimeter of the triangle.
@@ -39,7 +38,8 @@ class Triangle:
         Returns:
             int or float: return perimeter of the triangle if the triangle is valid, 0 otherwise
         '''
-        return 
+        if self.is_valid() == True:
+            return self.a + self.b +self.c
 
     def area(self):
         '''
