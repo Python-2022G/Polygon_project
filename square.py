@@ -27,7 +27,9 @@ class Square:
         Returns:
             float or int: return area of the square if the square is valid, 0 otherwise
         """
-        return 
+        return pow(self, 2)
+    
+    print(area(2))
     
     def perimeter(self):
         """
