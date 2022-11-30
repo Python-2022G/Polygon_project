@@ -14,7 +14,7 @@ class Rectangle:
         Returns: 
             bool: True if the rectangle is valid, False otherwise
         """ 
-        return 
+        return self.a>0 and self.b>0
 
 
     def perimeter(self):
