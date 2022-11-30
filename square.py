@@ -30,7 +30,7 @@ class Square:
         if self.is_valid == True:
             return pow(self.square_side, 2)
         else:
-            return 'error'
+            return False
 
     def perimeter(self):
         """
@@ -44,4 +44,4 @@ class Square:
         if self.is_valid == True:
             return self.square_side * 4
         else:
-            return 'error'
+            return False
