@@ -43,5 +43,3 @@ class Rectangle:
         if self.is_valid():
             return self.a*self.b
         return False
-ob=Rectangle(-2,5)
-print(ob.perimeter())
