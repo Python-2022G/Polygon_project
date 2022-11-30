@@ -40,4 +40,6 @@ class Rectangle:
         Returns:
             float or int:  return area of the rectangle if the rectangle is valid, 0 otherwise 
         """
-        return 
+        if self.a>0 and self.b>0:
+            return self.a*self.b
+        return False
