@@ -29,7 +29,7 @@ class Square:
         """
         if self.square_side < 0:
             return False
-        return self.square_side * 4
+        return self.square_side ** 2
     
     def perimeter(self):
         """
