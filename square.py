@@ -16,7 +16,7 @@ class Square:
         Returns:
             bool: This method checks if the square is valid.
         """        
-        return self.square_side > 0
+        return self.square_side>0
     
     def area(self):
         """
@@ -45,3 +45,4 @@ class Square:
             return self.square_side * 4
         else:
             return False
+
