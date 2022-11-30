@@ -27,10 +27,11 @@ class Square:
         Returns:
             float or int: return area of the square if the square is valid, 0 otherwise
         """
-        if self.is_valid():
-            return self.square_side ** 2
-        return False
-    
+        if self.is_valid == True:
+            return pow(self.square_side, 2)
+        else:
+            return False
+
     def perimeter(self):
         """
         This method finds the perimeter of the square.
@@ -39,7 +40,8 @@ class Square:
             No
         Returns:
             float: return perimeter of the square if the square is valid, 0 otherwise
-        """ 
-        if self.is_valid():
+        """
+        if self.is_valid == True:
             return self.square_side * 4
-        return False
+        else:
+            return False
