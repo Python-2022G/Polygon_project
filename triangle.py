@@ -35,7 +35,7 @@ class Triangle:
         Returns:
             int or float: return perimeter of the triangle if the triangle is valid, 0 otherwise
         '''
-        return 
+        return self.a + self.b +self.c
 
     def area(self):
         '''
