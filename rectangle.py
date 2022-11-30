@@ -26,7 +26,7 @@ class Rectangle:
         Returns:
             float or int: return perimeter of the rectangle if the rectangle is valid, 0 otherwise
         """
-        if Rectangle.is_valid(self):
+        if self.is_valid():
             return (self.a+self.b)*2
         return False
 
@@ -40,7 +40,7 @@ class Rectangle:
         Returns:
             float or int:  return area of the rectangle if the rectangle is valid, 0 otherwise 
         """
-        if self.a>0 and self.b>0:
+        if self.is_valid():
             return self.a*self.b
         return False
 ob=Rectangle(-2,5)
