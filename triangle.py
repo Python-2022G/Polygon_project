@@ -20,8 +20,12 @@ class Triangle:
         '''
         This method finds the type of the triangle.
         '''
-        return
-        
+        if a == b or b == c or a == c:
+            return 'teng yonli'
+        if a == b and a == c:
+            return 'muntazam'
+        if a != b and a != c and b != c:
+            return 'turli tomonli'
     def perimeter(self):
         '''
         This method finds the perimeter of the triangle.
