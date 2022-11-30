@@ -38,4 +38,6 @@ class Square:
         Returns:
             float: return perimeter of the square if the square is valid, 0 otherwise
         """
-        return 
+        return self * 4
+
+    print(perimeter(2))
