@@ -26,7 +26,9 @@ class Rectangle:
         Returns:
             float or int: return perimeter of the rectangle if the rectangle is valid, 0 otherwise
         """
-        return 
+        if self.a>0 and self.b>0:
+            return (self.a+self.b)*2
+        return False
 
 
     def area(self):
