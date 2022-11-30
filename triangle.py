@@ -20,7 +20,7 @@ class Triangle:
         '''
         This method finds the type of the triangle.
         '''
-        if is_valid == True:
+        if self.is_valid() == True:
             if self.a == self.b or self.b == self.c or self.a == self.c:
                 return 'teng yonli'
             if self.a == self.b and self.a == self.c:
@@ -36,7 +36,7 @@ class Triangle:
         Returns:
             int or float: return perimeter of the triangle if the triangle is valid, 0 otherwise
         '''
-        if is_valid == True:
+        if self.is_valid() == True:
             return self.a + self.b +self.c
 
     def area(self):
