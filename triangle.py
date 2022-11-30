@@ -14,13 +14,20 @@ class Triangle:
         Returns:
             bool: True if the triangle is valid, False otherwise
         '''
-        return 
+        return self.a>0 and self.b>0 and self.c>0 and self.a+self.b>self.c and self.a+self.c>self.b and self.c+self.b>self.a
     
     def get_type(self) -> str:
         '''
         This method finds the type of the triangle.
         '''
-        return
+        if self.is_valid():
+            if self.a==self.b and self.c!=self.a:
+                return "Teng tomonli"
+            if self.a==self.b and self.c==self.a:
+                return "teng tomonli"
+            return "Turli tomonli"
+        return False
+
         
     def perimeter(self):
         '''
