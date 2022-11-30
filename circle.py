@@ -12,7 +12,7 @@ class Circle:
         Returns:
             bool: True if the circle is valid, False otherwise
         """
-        return self.radius() > 0
+        return self.radius > 0
     
     def diameter(self):
         '''
