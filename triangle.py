@@ -48,4 +48,9 @@ class Triangle:
         Returns:
             int or float: return area of the triangle if the triangle is valid, 0 otherwise
         '''
-        return 
+        s = (self.a + self.b + self.c)
+
+        if self.is_valid:
+            return sqrt(s * (s - self.a) * (s - self.b) * (s - self.c))
+        else:
+            return 'error'
