@@ -14,7 +14,7 @@ class Rectangle:
         Returns: 
             bool: True if the rectangle is valid, False otherwise
         """ 
-        return self.a>0 and self.a!=0 and self.b>0 and self.b!=0
+        return self.a>0 and self.b>0
 
 
     def perimeter(self):
@@ -28,6 +28,7 @@ class Rectangle:
         """
         if self.is_valid():
             return (self.a + self.b)*2
+
         return False
 
 
@@ -41,7 +42,6 @@ class Rectangle:
             float or int:  return area of the rectangle if the rectangle is valid, 0 otherwise 
         """
         if self.is_valid():
-            return (self.a * self.b)
-        return False  
-
-   
+            return self.a*self.b
+            
+        return False
