@@ -18,7 +18,7 @@ class Triangle:
             return False
         elif self.b < 0:
             return False
-        elif self.c > 0:
+        elif self.c < 0:
             return False
         return max(self.a, self.b, self.c) < self.a + self.b + self.c - max(self.a, self.b, self.c)
     
