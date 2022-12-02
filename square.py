@@ -49,5 +49,3 @@ class Square:
            
             return self.square_side*4
         return False
-c=Square(2)
-print(c.area())
