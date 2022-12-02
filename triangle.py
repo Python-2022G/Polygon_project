@@ -32,6 +32,8 @@ class Triangle:
                 return "Teng yonli"
             if self.a==self.b and self.c==self.a:
                 return "teng tomonli"
+            if self.a **2 + self.b **2 + self.c ** 2 - max(self.a, self.b, self.c) ** 2 == max(self.a, self.b, self.c ** 2:
+                return "to\'g\'ri burchakli uchburchak"
             return "Turli tomonli"
         return False
 
@@ -48,6 +50,7 @@ class Triangle:
         '''
         if self.is_valid() == True:
             return self.a + self.b +self.c
+        return False
 
 
     def area(self):
