@@ -34,7 +34,7 @@ class Circle:
         Returns:
             float: return circumference of the circle if the circle is valid, 0 otherwise
         '''
-        if self.is_valid:
+        if self.is_valid():
             return self.radius*2*pi
         return False
     
@@ -47,6 +47,6 @@ class Circle:
         Returns:
             float: return area of the circle if the circle is valid, 0 otherwise
         '''
-        if self.is_valid:
+        if self.is_valid():
             return self.radius*self.radius*pi
-        return False 
+        return False  
