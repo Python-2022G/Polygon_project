@@ -20,8 +20,7 @@ class Triangle:
         '''
         This method finds the type of the triangle.
         '''
-        return
-        
+        return       
     def perimeter(self):
         '''
         This method finds the perimeter of the triangle.
@@ -31,7 +30,7 @@ class Triangle:
         Returns:
             int or float: return perimeter of the triangle if the triangle is valid, 0 otherwise
         '''
-        return 
+        return
 
     def area(self):
         '''
